@@ -1,0 +1,8 @@
+how to iterate through a xml data
+iterarting through connections of a user
+for every connection check whether his linkedin id(uid) is in authorizations table
+if found, check whether this particular user is attending the event or not(registration table)
+else iterate next element
+
+
+Rails.logger.debug(@connection.inspect)

@@ -1,0 +1,34 @@
+#<LinkedIn::Mash all=[#<LinkedIn::Mash api_standard_profile_request=#<LinkedIn::Mash headers=#<LinkedIn::Mash
+all=[#<LinkedIn::Mash name="x-li-auth-token" value="name:l-En">] total=1> url="http://api.linkedin.com/v1/
+people/xFEB_RTBka"> first_name="Harish" headline="tgt at nvs and Owner, nvs" id="xFEB_RTBka"
+industry="Education Management" last_name="G" location=#<LinkedIn::Mash country=#<LinkedIn::Mash code="in">
+name="Bengaluru Area, India"> site_standard_profile_request=#<LinkedIn::Mash url="http://www.linkedin.com/
+profile?viewProfile=&key=10442019&authToken=l-En&authType=name&trk=api*a170380*s178628*">>] total=1>
+#<Net::HTTPCreated:0x00000005be0780>
+
+
+
+
+
+
+
+
+
+
+{"provider"=>"linked_in", "uid"=>"Q5v9KRBpDi", "credentials"=>
+{"token"=>"5dc83a40-4717-4b98-9f61-9717a62eafc7", "secret"=>"bcc0b692-38dc-4671-8efb-94685e6eb9c0"}, "extra"=>
+{"access_token"=>#<OAuth::AccessToken:0x00000005d668c0 @token="5dc83a40-4717-4b98-9f61-9717a62eafc7",
+@secret="bcc0b692-38dc-4671-8efb-94685e6eb9c0", @consumer=#<OAuth::Consumer:0x00000005e1b590
+@key="sup72rpsh43n", @secret="wYzneYSh0nOMHnHv", @options={:signature_method=>"HMAC-
+SHA1", :request_token_path=>"/uas/oauth/requestToken", :authorize_path=>"/uas/oauth/
+authenticate", :access_token_path=>"/uas/oauth/
+accessToken", :proxy=>nil, :scheme=>:header, :http_method=>:post, :oauth_version=>"1.0", :site=>"https://
+api.linkedin.com"}, @http=#<Net::HTTP api.linkedin.com:443 open=false>, @http_method=:post,
+@uri=#<URI::HTTPS:0x00000005d65e98 URL:https://api.linkedin.com>>, @params=
+{:oauth_token=>"5dc83a40-4717-4b98-9f61-9717a62eafc7",
+"oauth_token"=>"5dc83a40-4717-4b98-9f61-9717a62eafc7", :oauth_token_secret=>"bcc0b692-38dc-4671-8efb-94685e6eb9c0",
+"oauth_token_secret"=>"bcc0b692-38dc-4671-8efb-94685e6eb9c0", :oauth_expires_in=>"0",
+"oauth_expires_in"=>"0", :oauth_authorization_expires_in=>"0", "oauth_authorization_expires_in"=>"0"},
+@response=#<Net::HTTPOK 200 OK readbody=true>>}, "user_info"=>{"first_name"=>"santosh", "last_name"=>"kosgi",
+"nickname"=>"1a8", "location"=>"Narayanpet Area, India", "image"=>nil, "description"=>"Student",
+"public_profile_url"=>"http://www.linkedin.com/pub/santosh-kosgi/26/4a/1a8",}

@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+require "rubygems"
+require "net/https"
+require "uri"
+require "json"
+
+puts "hello"
+ARGV.each do|a|
+  puts "Argument: #{a}"
+end
+puts ARGV.class
+
+uri = URI.parse("https://graph.facebook.com/me/feed")
+
+param = { :access_token => "AAACEdEose0cBAOEGZCvJBszGhPaXlJTXqJxVMfqClZB8sZBUkiHCOUzkchj0aUeWIGMNeNZAkR81WDcLYCYztXRtYDTvdNd9jVFSKGujpm7I773wFrNM",:message => ARGV[0]}
+
+uri.query = URI.encode_www_form(param)
+
+http = Net::HTTP.new(uri.host, uri.port)
+http.use_ssl = true
+http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+
+request = Net::HTTP::Post.new(uri.request_uri)
+
+response = http.request(request)
+
+puts response.body
+#puts JSON.parse(response.body)["data"][0]["story"]
+#JSON.parse(response.body)["data"].each do |feed|
+#  puts feed["story"]
+#end

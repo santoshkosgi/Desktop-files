@@ -1,0 +1,9 @@
+1> create, drop database using mysqladmin
+2> Take a db dump using mysqldump
+3> Restore a db dump
+4> Create a virtual host in apacche, so that you can browse ur site at http://mydomain
+5> Password protect a site using .htaccess
+6> Drush ( dl module, install, disable, status of a module. cache clear command)
+
+
+dev.nodeone.se
